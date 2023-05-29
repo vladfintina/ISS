@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneTester" prefHeight="493.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TesterController">
+   <children>
+      <TableView fx:id="tableViewBugs" layoutX="15.0" layoutY="102.0" prefHeight="258.0" prefWidth="381.0" />
+      <Label layoutX="37.0" layoutY="28.0" prefHeight="27.0" prefWidth="125.0" text="F&amp;F Solutions">
+         <textFill>
+            <RadialGradient centerX="0.4559470945517922" centerY="0.5189393939393939" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9263157844543457" green="0.03773879259824753" blue="0.03773879259824753" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09473684430122375" green="0.002456140238791704" blue="0.002456140238791704" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="76.0" prefHeight="18.0" prefWidth="42.0" text="Title">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleTextField" layoutX="528.0" layoutY="76.0" promptText="Insert Title" />
+      <Label layoutX="420.0" layoutY="136.0" text="Description">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextArea" layoutX="528.0" layoutY="136.0" prefHeight="118.0" prefWidth="299.0" promptText="Insert Description" />
+      <ComboBox fx:id="riskLevelComboBox" layoutX="528.0" layoutY="290.0" prefWidth="150.0" />
+      <Label layoutX="442.0" layoutY="279.0" prefHeight="47.0" prefWidth="79.0" text="Risk level">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="535.0" layoutY="395.0" mnemonicParsing="false" onAction="#addBug" prefHeight="47.0" prefWidth="135.0" text="Add New Bug">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4559470945517922" centerY="0.5189393939393939" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9263157844543457" green="0.03773879259824753" blue="0.03773879259824753" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09473684430122375" green="0.002456140238791704" blue="0.002456140238791704" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

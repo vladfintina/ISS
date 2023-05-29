@@ -1,0 +1,6 @@
+rootProject.name = "BugAppFinal"
+include 'service'
+include 'repository'
+include 'domain'
+include 'GUI'
+

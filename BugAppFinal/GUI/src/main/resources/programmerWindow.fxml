@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="505.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProgrammerController">
+   <children>
+      <Label layoutX="57.0" layoutY="36.0" prefHeight="34.0" prefWidth="122.0" text="F&amp;F Solutions">
+         <textFill>
+            <RadialGradient centerX="0.5220264317180616" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6105263233184814" green="0.029395710676908493" blue="0.029395710676908493" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2526315748691559" green="0.22269006073474884" blue="0.22269006073474884" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewBugs" layoutX="39.0" layoutY="95.0" prefHeight="252.0" prefWidth="395.0" />
+      <ComboBox fx:id="comboBoxStatus" layoutX="475.0" layoutY="95.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxRiskLevel" layoutX="660.0" layoutY="95.0" prefWidth="150.0" />
+      <Label layoutX="475.0" layoutY="53.0" prefHeight="18.0" prefWidth="91.0" text="Status">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="667.0" layoutY="53.0" text="RiskLevel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="filterStatusBtn" layoutX="475.0" layoutY="196.0" mnemonicParsing="false" onAction="#clickFilterStatus" prefHeight="54.0" prefWidth="112.0" text="Filter by status">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="filterRiskLevelBtn" layoutX="670.0" layoutY="196.0" mnemonicParsing="false" onAction="#clickFilterRiskLevel" prefHeight="54.0" prefWidth="130.0" text="Filter by risk level">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="solvedBugBtn" layoutX="475.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickSolvedBug" prefHeight="45.0" prefWidth="112.0" text="Solved Bug">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="displayAllBtn" layoutX="667.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickDisplayAll" prefHeight="46.0" prefWidth="122.0" text="Display All">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
